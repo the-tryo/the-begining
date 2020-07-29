@@ -5,7 +5,7 @@ const Patient = require("../models/patient");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.send("HEY Get api is working");
+  res.redirect("../layouts/index.html");
 });
 
 router.post("/", (req, res) => {
@@ -16,9 +16,9 @@ router.post("/", (req, res) => {
     date: req.body.date,
   });
 
-  patient.save((err, patient) => {
-    if (err) res.json({ msg: "Failed to add contact" });
-    else res.json(patient);
+  patient.save((err, patients) => {
+    if (err) res.json({ msg: "Failed to add patient" });
+    else res.json(patients);
   });
 });
 

@@ -20,8 +20,8 @@ mongoose
     console.log(err);
   });
 
-app.use("/submit_ack", require("./routes/submit"));
-app.use("/find_ack", require("./routes/find"));
+app.use("/submit", require("./routes/submit"));
+app.use("/users", require("./routes/find"));
 
 app.listen(port, () => {
   console.log("Server started at ", port);
