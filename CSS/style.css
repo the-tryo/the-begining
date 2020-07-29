@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 10;
+  box-sizing: border-box;
+}
+
+.clear {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  background-color: #fff;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+body {
+  font-family: Lato;
+  background-color: #fffff7;
+}
+
+#h1 {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-left: 15%;
+}
+#nav ul {
+  list-style-type: none;
+  margin-top: 20px;
+  background-color: rgb(177, 176, 153);
+  padding: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#nav li {
+  display: inline;
+  padding-left: 35px;
+}
+#nav a {
+  text-decoration: none;
+}
+
+img {
+  margin-left: 20%;
+  margin-top: 20px;
+}
+p {
+  padding: 10px;
+}
+#credit {
+  margin-top: 15%;
+  text-align: center;
+  opacity: 20%;
+}
+.menu {
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 20px;
+}
+.menu:focus {
+  outline: none;
+}
+.menu ul {
+  list-style-type: none;
+}
+.menu li {
+  margin-top: 10px;
+}
+
+button {
+  font-family: Lato;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+button:hover {
+  border: none;
+  background: rgb(175, 162, 101);
+  font-weight: 600;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+.butt {
+  margin-left: 30%;
+  margin-top: 20px;
+}
