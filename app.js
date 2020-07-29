@@ -5,7 +5,8 @@ const app = express();
 const port = 5200;
 app.use(express.json());
 
-const db = "URI";
+const db =
+  "mongodb+srv://avatar:Avatar@123@project-cluster.ipmhy.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority";
 
 mongoose
   .connect(db, {
@@ -19,8 +20,8 @@ mongoose
     console.log(err);
   });
 
-app.use("/submit", require("./routes/submit"));
-app.use("/users", require("./routes/find"));
+app.use("/submit_ack", require("./routes/submit"));
+app.use("/find_ack", require("./routes/find"));
 
 app.listen(port, () => {
   console.log("Server started at ", port);
